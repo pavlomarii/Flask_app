@@ -9,7 +9,7 @@ class Department(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     uuid = db.Column(db.String(36), unique=True)
     name = db.Column(db.String, nullable=False, unique=True)
-    employees = db.relationship('Employee', backref='department', lazy='subquery')
+    employees = db.relationship('Employee', backref='department_id', lazy='subquery')
 
     def __init__(self, name, employees=None):
         self.name = name
