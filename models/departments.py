@@ -1,6 +1,6 @@
 import uuid
 
-from wsgi import db
+from views import db
 
 
 class Department(db.Model):

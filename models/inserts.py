@@ -2,7 +2,7 @@ from datetime import date
 
 from models.departments import Department
 from models.employees import Employee
-from wsgi import db
+from views import db
 
 
 def populate():

@@ -1,6 +1,6 @@
 import uuid
 
-from wsgi import db
+from views import db
 
 
 class Employee(db.Model):
@@ -18,7 +18,6 @@ class Employee(db.Model):
         self.birthday = birthday
         self.salary = salary
         self.uuid = str(uuid.uuid4())
-        # self.department = department
 
     def __repr__(self):
         return f'Employee({self.name}, {self.birthday}, {self.salary})'
