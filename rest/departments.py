@@ -5,7 +5,7 @@ from sqlalchemy.orm import joinedload
 from models.departments import Department
 from schemas.department import DepartmentSchema
 from service.department_service import DepartmentService
-from wsgi import db
+from views import db
 
 
 class DepartmentApi(Resource):
