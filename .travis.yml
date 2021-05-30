@@ -13,6 +13,6 @@ install:
 script:
   - python -m pytest test/
   - coverage run --source="./" -m pytest
-  - pycodestyle src/ --ignore=E722,E501,E402
+  - pycodestyle ./ --ignore=E722,E501,E402
 
 after_success: coveralls
