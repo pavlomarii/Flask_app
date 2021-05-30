@@ -13,7 +13,7 @@ from models import departments, employees
 
 @app.route('/')
 def index():
-    return 'Hello World'
+    return {'message': 'Hello World'}, 200
 
 
 if __name__ == '__main__':
