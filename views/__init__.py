@@ -17,4 +17,3 @@ def index():
 
 
 from views import routes
-
